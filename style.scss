@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+/* variables */
+
+$shrik : shrikhand, serif;
+    
+html{
+    font-family: roboto, sans-serif;
+    max-width: 768px;
+}
+.title{
+    font-family: $shrik;
+}

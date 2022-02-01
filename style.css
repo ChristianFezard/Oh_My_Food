@@ -1,0 +1,15 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* variables */
+html {
+  font-family: roboto, sans-serif;
+  max-width: 768px;
+}
+
+.title {
+  font-family: shrikhand, serif;
+}
+/*# sourceMappingURL=style.css.map */
