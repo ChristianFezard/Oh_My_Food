@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+/* variables */
+
+$shrik : shrikhand, serif;
+$primary : #9356dc;
+$secondary : #ff79dA;
+$tertiary : #99e2d0;
+$grey : #f3f3f3;
+
+/* style */
+    
+html{
+    font-family: roboto, sans-serif;
+    max-width: 768px;
+    margin: 0 auto;
+}
+body{
+    margin: 0;
+}
+header{ 
+    position: relative;
+    & i{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: x-large;
+    }
+}
+.title{
+    font-family: $shrik;
+    font-weight: 500;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+.menu{
+    background-color: $grey;
+    border-radius: 40px 40px 0 0; 
+    padding: 10px 15px;
+    z-index: 1;
+    margin-top: -40px;
+    position: relative;
+    &__header{
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &--title{
+            font-family: $shrik;
+            font-weight: 500;
+        }
+        & i{
+            font-size: x-large;
+            position: absolute;
+            right: 40px;
+        }
+    }
+    &__section--title{
+        text-transform: uppercase;
+        font-weight: lighter;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    &__section--title::after{
+                content: "";
+                width: 50px;
+                height: 3px;
+                background-color: $tertiary;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+    }
+    &__item{
+        width: 100%;
+        display: flex;
+        border: 1px white solid;
+        background-color: white;
+        padding: 10px 20px 10px 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        box-shadow: 2px 5px 10px darken($grey, 20);
+        &--text h4{
+            margin: 0;
+            font-size: large;
+        }
+        &--text p{
+            margin: 0;
+        }
+    }
+    &__price{
+        margin-left: auto;
+        display: flex;
+        align-items: flex-end;
+        font-weight: bold;
+    }
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    &__order{
+        border: none;
+        border-radius: 30px;
+        color: white;
+        padding: 15px 40px 15px 40px;
+        margin: 30px 0 50px 0;
+        background-image: linear-gradient(0deg, $primary, $secondary);
+        box-shadow: 2px 5px 10px darken($grey, 20);
+        cursor: pointer;
+    }
+}
+
+footer{
+    font-size: small;
+    color: white;
+    background-color: lighten($color: #000000, $amount: 20);
+    padding: 10px 20px 25px;
+}
+.logo{
+    font-family: $shrik;
+    font-weight: 500;
+}
+footer i{
+    margin-right: 5px;
+    font-size: smaller;
+}
