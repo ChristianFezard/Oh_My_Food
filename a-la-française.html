@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="française.css" />
+        <link rel="stylesheet" href="menu.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,62 +11,91 @@
         <title>À la française</title>
     </head>
     <body>
-        <main>
-            <section class="menu">
-                <img class="card__img" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="à la française">
-                <h1 class="menu__title">À la française</h1>
+        <header>
+            <i class="fas fa-arrow-left"></i>
+            <h1 class="title">ohmyfood</h1>
+        </header>
+        <img class="menu__img" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="à la française">
+        <main class="menu">
+            <div class="menu__header">
+                <h1 class="menu__header--title">À la française</h1>
                 <i class="far fa-heart"></i>
-                <div class="menu__section">
-                    <p>ENTRÉES</p>
-                    <div class="menu__item">
-                        <h3>Tartare de poulpe acidulé</h3>
+            </div>
+            <div class="menu__section">
+                <h3 class="menu__section--title">entrées</h3>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Tartare de poulpe acidulé</h4>
                         <span>Aux zests d'orange</span>
-                        <span>25€</span>
                     </div>
-                    <div class="menu__item">
-                        <h3>Velouté de légumes d'antan</h3>
+                    <span class="menu__price">25€</span>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Velouté de légumes d'antan</h4>
                         <span>Carottes, panais, topinambour</span>
-                        <span>35€</span>
                     </div>
-                    <div class="menu__item">
-                        <h3>Soupe à l'oignon</h3>
+                    <span class="menu__price">35€</span>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Soupe à l'oignon</h4>
                         <span>Revisitée</span>
-                        <span>20€</span>
                     </div>
+                    <span class="menu__price">20€</span>
                 </div>
-                <div class="menu__section">
-                    <p>PLATS</p>
-                    <div class="menu__item">
-                        <h3>Coquilles Saint-Jacques</h3>
+            </div>
+            <div class="menu__section">
+                <h3 class="menu__section--title">plats</h3>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Coquilles Saint-Jacques</h4>
                         <span>Accompagné d'une purée de panais</span>
-                        <span>40€</span>
-                    </div><div class="menu__item">
-                        <h3>Magret de canard</h3>
+                    </div>
+                    <span class="menu__price">40€</span>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Magret de canard</h4>
                         <span>Et parmentier de pommes de terres</span>
-                        <span>35€</span>
-                    </div><div class="menu__item">
-                        <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                    </div>
+                    <span class="menu__price">35€</span>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Pigeonneau d'Ille-et-Vilaine</h4>
                         <span>Sur son lit de gnocchis aux légumes</span>
-                        <span>44€</span>
                     </div>
+                    <span class="menu__price">44€</span>
                 </div>
-                <div class="menu__section">
-                    <div class="menu__item">
-                        <h3>Pétales de violettes glacés</h3>
+            </div>
+            <div class="menu__section">
+                <h3 class="menu__section--title">desserts</h3>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Pétales de violettes glacés</h4>
                         <span>Et purée de noisettes</span>
-                        <span>18€</span>
-                    </div><div class="menu__item">
-                        <h3>Fondant au chocolat</h3>
-                        <span>Revisité</span>
-                        <span>22€</span>
-                    </div><div class="menu__item">
-                        <h3>Millefeuille croustillant</h3>
-                        <span>Myrtilles et pâte d'amande</span>
-                        <span>23€</span>
                     </div>
+                    <span class="menu__price">18€</span>
                 </div>
-            </section>
-            <button class="order">Commander</button>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Fondant au chocolat</h4>
+                        <span>Revisité</span>
+                    </div>
+                    <span class="menu__price">22€</span>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item--text">
+                        <h4>Millefeuille croustillant</h4>
+                        <span>Myrtilles et pâte d'amande</span>
+                    </div>
+                    <span class="menu__price">23€</span>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="btn__order">Commander</button>
+            </div>
         </main>
         <footer>
             <h3 class="logo">ohmyfood</h3>
