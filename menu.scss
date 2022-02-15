@@ -9,6 +9,19 @@ $secondary : #ff79dA;
 $tertiary : #99e2d0;
 $grey : #f3f3f3;
 
+/*keyframe check*/
+
+@keyframes appear{
+    0% {
+        opacity: 0;
+        transform: translate3d(0,30px,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
 /* style */
     
 html{
@@ -22,10 +35,11 @@ body{
 header{ 
     position: relative;
     & i{
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    font-size: x-large;
+        color: black;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: x-large;
     }
 }
 .title{
@@ -60,6 +74,16 @@ img{
             position: absolute;
             right: 40px;
         }
+        & .fas{
+            color: transparent;
+            background-image: linear-gradient(0deg, $primary, $secondary);
+            background-clip: text;
+            opacity: 0;
+            transition-duration: 300ms;
+        }
+        & .fas:hover{
+            opacity: 1;
+        }
     }
     &__section--title{
         text-transform: uppercase;
@@ -79,12 +103,19 @@ img{
     &__item{
         width: 100%;
         display: flex;
-        border: 1px white solid;
         background-color: white;
-        padding: 10px 20px 10px 10px;
         border-radius: 20px;
         margin-bottom: 20px;
         box-shadow: 2px 5px 10px darken($grey, 20);
+        overflow: hidden;
+        cursor: pointer;
+        animation: appear 800ms ease both;
+        &--text{
+            padding: 10px 20px 10px 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
         &--text h4{
             margin: 0;
             font-size: large;
@@ -98,7 +129,26 @@ img{
         display: flex;
         align-items: flex-end;
         font-weight: bold;
+        padding: 10px 25px;
     }
+    &__check{
+        width: 60px;
+        background-color: $tertiary;
+        margin-right: -60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 500ms;
+        & i{
+            background-color: white;
+            color: $tertiary;
+            border-radius: 100px;
+            padding: 5px;
+        }
+    }
+}
+.menu__item:hover > .menu__check{
+    margin-right: 0;
 }
 
 .btn{
@@ -113,6 +163,11 @@ img{
         background-image: linear-gradient(0deg, $primary, $secondary);
         box-shadow: 2px 5px 10px darken($grey, 20);
         cursor: pointer;
+        &:hover{
+            transition: 300ms;
+            opacity: 0.90;
+            box-shadow: 2px 5px 10px darken($grey, 70);
+        }
     }
 }
 
@@ -129,4 +184,24 @@ footer{
 footer i{
     margin-right: 5px;
     font-size: smaller;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+@media (min-width : 768px){
+    html{
+        max-width: 991px;
+    }
+}
+@media (min-width : 992px){
+    html{
+        max-width: 1400px;
+    }
+    .menu__sections{
+        display: flex;
+    }
+    .menu__section{
+        margin: auto;
+    }   
 }
