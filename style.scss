@@ -188,21 +188,25 @@ body{
           margin-bottom: 5px;  
         }
     }
-    &__bottom i{
-        position: absolute;
-        font-size: large;
-        right: 20px;
-        bottom: 25px;
-    }
-    & .fas{
-        color: transparent;
-        background-clip: text;
-        background-image: linear-gradient(0deg, $primary, $secondary);
-        opacity: 0;
-        transition-duration: 300ms;
-    }
-    & .fas:hover{
-        opacity: 1;
+    &__heart{
+        width: 25px;
+        &--empty{
+            position: absolute;
+            width: 20px;
+            right: 20px;
+            bottom: 20px;
+        }
+        &--full{
+            position: absolute;
+            width: 20px;
+            right: 20px;
+            bottom: 20px;
+            opacity: 0;
+            transition-duration: 300ms;
+            &:hover{
+                opacity: 1;
+            }
+        }
     }
 }
 footer{

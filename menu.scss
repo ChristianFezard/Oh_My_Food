@@ -1,4 +1,4 @@
-*{
+*, *::after{
     box-sizing: border-box;
 }
 /* variables */
@@ -69,20 +69,25 @@ img{
             font-family: $shrik;
             font-weight: 500;
         }
-        & i{
-            font-size: x-large;
+    }
+    &__heart{
+        position: relative;
+        width: 30px;
+        cursor: pointer;
+        &--empty{
             position: absolute;
-            right: 40px;
+            width: 25px;
+            top: -10px;
         }
-        & .fas{
-            color: transparent;
-            background-image: linear-gradient(0deg, $primary, $secondary);
-            background-clip: text;
+        &--full{
+            position: absolute;
+            width: 25px;
+            top: -10px;
             opacity: 0;
             transition-duration: 300ms;
-        }
-        & .fas:hover{
-            opacity: 1;
+            &:hover{
+                opacity: 1;
+            }
         }
     }
     &__section--title{
@@ -105,51 +110,71 @@ img{
         display: flex;
         background-color: white;
         border-radius: 20px;
-        margin-bottom: 20px;
+        padding: 15px 0 15px 15px;
+        margin: 15px 0px;
         box-shadow: 2px 5px 10px darken($grey, 20);
-        overflow: hidden;
         cursor: pointer;
-        animation: appear 800ms ease both;
+        overflow: hidden;
+        animation: appear 800ms ease;
         &--text{
-            padding: 10px 20px 10px 10px;
-            overflow: hidden;
+            flex: 1;
             text-overflow: ellipsis;
+            overflow: hidden;
             white-space: nowrap;
         }
         &--text h4{
             margin: 0;
             font-size: large;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
         &--text p{
             margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
     &__price{
-        margin-left: auto;
         display: flex;
+        justify-content: flex-end;
         align-items: flex-end;
         font-weight: bold;
-        padding: 10px 25px;
     }
     &__check{
         width: 60px;
         background-color: $tertiary;
-        margin-right: -60px;
+        margin: -15px -60px -15px 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition-duration: 500ms;
-        & i{
+        transition-duration: 800ms;
+        &--icon{
             background-color: white;
             color: $tertiary;
+            width: 25px;
+            height: 25px;
             border-radius: 100px;
-            padding: 5px;
-        }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(360deg);
+            transition-duration: 800ms;
+            &--icon i{
+                color: $tertiary;
+            }
+        }    
     }
 }
-.menu__item:hover > .menu__check{
+
+.menu__item:hover > .menu__check {
     margin-right: 0;
-}
+  }
+  
+  .menu__item:hover .menu__check--icon {
+            transform: rotate(0deg);
+  }
 
 .btn{
     display: flex;
@@ -200,8 +225,10 @@ footer a{
     }
     .menu__sections{
         display: flex;
+        gap: 15px;
     }
-    .menu__section{
-        margin: auto;
-    }   
+    .menu__section{ 
+        flex-direction: column;
+        width: calc((100% / 3) - (30px / 3));
+    }
 }

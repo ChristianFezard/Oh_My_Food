@@ -19,91 +19,128 @@
         <main class="menu">
             <div class="menu__header">
                 <h1 class="menu__header--title">À la française</h1>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
+                <div class="menu__heart">
+                    <div class="menu__heart--empty">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="grey" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+                        </svg>
+                    </div>
+                    <div class="menu__heart--full">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <defs>
+                            <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#9356dc" />
+                                <stop offset="0.25" stop-color="#a85adc" />
+                                <stop offset="0.5" stop-color="#cf64dc" />
+                                <stop offset="0.75" stop-color="#f172da" />
+                                <stop offset="1" stop-color="#ff79da" />
+                            </linearGradient>
+                            </defs>
+                            <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                        </svg>
+                    </div>
+                </div>
             </div>
             <div class="menu__sections">
-                <div class="menu__section">
+                <section class="menu__section">
                     <h3 class="menu__section--title">entrées</h3>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Tartare de poulpe acidulé</h4>
-                            <span>Aux zestes d'orange</span>
+                            <p>Aux zestes d'orange</p>
                         </div>
-                        <span class="menu__price">25€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">25€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>
                     </div>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Velouté de légumes d'antan</h4>
-                            <span>Carottes, panais, topinambour</span>
+                            <p>Carottes, panais, topinambour</p>
                         </div>
-                        <span class="menu__price">35€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">35€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>    
                     </div>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Soupe à l'oignon</h4>
-                            <span>Revisitée</span>
+                            <p>Revisitée</p>
                         </div>
-                        <span class="menu__price">20€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">20€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>
                     </div>
-                </div>
-                <div class="menu__section">
+                </section>
+                <section class="menu__section">
                     <h3 class="menu__section--title">plats</h3>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Coquilles Saint-Jacques</h4>
-                            <span>Accompagné d'une purée de panais</span>
+                            <p>Accompagné d'une purée de panais</p>
                         </div>
-                        <span class="menu__price">40€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">40€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>
                     </div>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Magret de canard</h4>
-                            <span>Et parmentier de pommes de terres</span>
+                            <p>Et parmentier de pommes de terres</p>
                         </div>
-                        <span class="menu__price">35€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">35€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>
                     </div>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                            <span>Sur son lit de gnocchis aux légumes</span>
+                            <p>Sur son lit de gnocchis aux légumes</p>
                         </div>
-                        <span class="menu__price">44€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">44€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>
                     </div>
-                </div>
-                <div class="menu__section">
+                </section>
+                <section class="menu__section">
                     <h3 class="menu__section--title">desserts</h3>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Pétales de violettes glacés</h4>
-                            <span>Et purée de noisettes</span>
+                            <p>Et purée de noisettes</p>
                         </div>
-                        <span class="menu__price">18€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">18€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>
                     </div>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Fondant au chocolat</h4>
-                            <span>Revisité</span>
+                            <p>Revisité</p>
                         </div>
-                        <span class="menu__price">22€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">22€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>
                     </div>
                     <div class="menu__item">
                         <div class="menu__item--text">
                             <h4>Millefeuille croustillant</h4>
-                            <span>Myrtilles et pâte d'amande</span>
+                            <p>Myrtilles et pâte d'amande</p>
                         </div>
-                        <span class="menu__price">23€</span>
-                        <div class="menu__check"><i class="fas fa-check"></i></div>
+                        <div class="menu__price">23€</div>
+                        <div class="menu__check">
+                            <div class="menu__check--icon"><i class="fas fa-check"></i></div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
             <div class="btn">
                 <button class="btn__order">Commander</button>
@@ -117,3 +154,4 @@
             <a href="mailto:ohmyfood@gmail.com">Contact</a>
         </footer>
     </body>
+</html>

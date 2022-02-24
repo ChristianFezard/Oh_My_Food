@@ -255,24 +255,28 @@ body {
   margin-bottom: 5px;
 }
 
-.card__bottom i {
-  position: absolute;
-  font-size: large;
-  right: 20px;
-  bottom: 25px;
+.card__heart {
+  width: 25px;
 }
 
-.card .fas {
-  color: transparent;
-  background-clip: text;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79dA));
-  background-image: linear-gradient(0deg, #9356dc, #ff79dA);
+.card__heart--empty {
+  position: absolute;
+  width: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.card__heart--full {
+  position: absolute;
+  width: 20px;
+  right: 20px;
+  bottom: 20px;
   opacity: 0;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
 }
 
-.card .fas:hover {
+.card__heart--full:hover {
   opacity: 1;
 }
 
