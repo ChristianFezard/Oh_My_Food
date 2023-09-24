@@ -1,4 +1,4 @@
-﻿# OCProjectOhmyFood
+﻿# OCProject3 - OhmyFood
 
  ## Description
  Implémentez la version mobile d'un site de foodtech avec des animations CSS.
